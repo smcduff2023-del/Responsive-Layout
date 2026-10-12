@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Meet our fluffy dinosaur friends and find your favorite.">
+    <title>Soft Saur - Fluffy Dinosaur Friends</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <header>
+      <a class="logo" href="index.html">🦕 Soft Saur</a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="hero-title">Fluffy Dinosaurs For Sale</p>
+          <a class="button" href="#products">Click here to see more!</a>
+        </div>
+
+        <img
+          class="hero-picture"
+          src="dinosaurs1.png"
+          alt="Fluffy green dinosaur plush">
+      </section>
+
+      <section class="products" id="products">
+        <h2>Pick a pal</h2>
+        <p class="section-intro">Three little dinos are ready to meet you.</p>
+
+        <div class="product-list">
+          <article class="product">
+            <img
+              class="product-picture"
+              src="dinosaurs2.png"
+              alt="Green dinosaur plush with orange spikes">
+            <h3>Fern</h3>
+            <p>A gentle green dino who loves naps.</p>
+            <p class="price">$28</p>
+            <button
+              class="add-button"
+              type="button"
+              data-name="Fern"
+              data-price="28">Add Fern to bag</button>
+          </article>
+
+          <article class="product">
+            <img
+              class="product-picture"
+              src="dinosaurs3.png"
+              alt="Fluffy green dinosaur plush">
+            <h3>Peaches</h3>
+            <p>A peachy pal who is always cheerful.</p>
+            <p class="price">$26</p>
+            <button
+              class="add-button"
+              type="button"
+              data-name="Peaches"
+              data-price="26">Add Peaches to bag</button>
+          </article>
+
+          <article class="product">
+            <img
+              class="product-picture"
+              src="dinosaurs4.png"
+              alt="A group of colorful dinosaur plush toys">
+            <h3>Moon</h3>
+            <p>A sleepy friend for nighttime cuddles.</p>
+            <p class="price">$30</p>
+            <button
+              class="add-button"
+              type="button"
+              data-name="Moon"
+              data-price="30">Add Moon to bag</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="bag" id="bag">
+        <h2>Your bag</h2>
+        <p>You have <span class="bag-count">0</span> dino(s) in your bag.</p>
+        <p class="bag-items">Your bag is empty so far.</p>
+        <p>Total: $<span class="bag-total">0</span></p>
+        <button class="clear-button" type="button">Empty my bag</button>
+      </section>
+
+      <section class="signup">
+        <h2>Get dino news!</h2>
+        <p>Sign up for new dino news and occasional offers.</p>
+
+        <form data-form="signup">
+          <label for="name">First name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="given-name"
+            placeholder="Your first name"
+            required>
+
+          <label for="email">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required>
+
+          <label class="check-label" for="permission">
+            <input id="permission" name="permission" type="checkbox" required>
+            It's okay to email me dino news. I can unsubscribe later.
+          </label>
+
+          <button class="button" type="submit">Sign me up!</button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="note">This is a demo form. It does not send or save your information.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Soft Saur · Made for dino-sized hugs</p>
+
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

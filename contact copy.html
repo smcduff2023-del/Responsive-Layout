@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get in touch with Soft Saur about our fluffy dinosaur friends.">
+    <title>Contact Soft Saur</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <header>
+      <a class="logo" href="index.html">🦕 Soft Saur</a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="simple-page contact-page">
+      <p class="small-title">We'd love to hear from you</p>
+      <h1>Say hello!</h1>
+      <p class="page-intro">Have a question about a dino? Leave us a note below.</p>
+
+      <form class="contact-form" data-form="contact">
+        <label for="contact-name">Your name</label>
+        <input
+          id="contact-name"
+          name="name"
+          type="text"
+          autocomplete="name"
+          placeholder="First and last name"
+          required>
+
+        <label for="contact-email">Email address</label>
+        <input
+          id="contact-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          placeholder="you@example.com"
+          required>
+
+        <label for="topic">What can we help with?</label>
+        <select id="topic" name="topic" required>
+          <option value="" selected disabled>Choose one</option>
+          <option value="Product question">A product question</option>
+          <option value="Order question">An order question</option>
+          <option value="Hello">Just saying hello</option>
+        </select>
+
+        <label for="message">Your message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          maxlength="1000"
+          placeholder="Write your note here"
+          required></textarea>
+
+        <button class="button" type="submit">Send message</button>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="note">This is a demo form. It does not send or save your information.</p>
+    </main>
+
+    <footer>
+      <p>Soft Saur · Made for dino-sized hugs</p>
+
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+/* Page defaults */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #faf8f1;
+  color: #30483b;
+  font-family: "Nunito", Arial, sans-serif;
+}
+
+header,
+footer {
+  padding: 18px 8%;
+  background-color: #e6edda;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  color: #30483b;
+  font-family: "Baloo 2", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #30483b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero > div:first-child {
+  max-width: 520px;
+}
+
+.small-title {
+  color: #64805d;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Baloo 2", Arial, sans-serif;
+}
+
+.hero-title {
+  margin: 8px 0;
+  font-size: 52px;
+  font-family: "Baloo 2", Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.08;
+}
+
+.hero-text,
+.page-intro {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.button,
+.add-button,
+.clear-button {
+  display: inline-block;
+  padding: 11px 17px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #46664d;
+  color: white;
+  cursor: pointer;
+  font: bold 15px "Nunito", Arial, sans-serif;
+  text-decoration: none;
+}
+
+.button:hover,
+.add-button:hover {
+  background-color: #314d38;
+}
+
+/* Home page */
+
+.hero-picture {
+  width: 320px;
+  max-width: 45%;
+  height: auto;
+  background-color: #e5d9c4;
+}
+
+.products {
+  padding: 45px 8%;
+  background-color: #f0eee4;
+  text-align: center;
+}
+
+.products h2,
+.bag h2,
+.signup h2 {
+  margin: 0 0 5px;
+  font-size: 34px;
+}
+
+.section-intro {
+  margin: 0 0 25px;
+}
+
+.product-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.product {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #dedfd3;
+  border-radius: 7px;
+  background-color: #fffefa;
+  text-align: left;
+}
+
+.product-picture {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 5px;
+  background-color: #e4ecd9;
+}
+
+.product h3 {
+  margin: 12px 0 0;
+  font-size: 24px;
+}
+
+.product p {
+  margin: 5px 0;
+}
+
+.product .price {
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.add-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.bag,
+.signup {
+  max-width: 660px;
+  margin: 45px auto;
+  padding: 25px;
+}
+
+.bag {
+  border: 1px solid #dedfd3;
+  border-radius: 7px;
+  background-color: #fffefa;
+}
+
+.bag p {
+  margin: 8px 0;
+}
+
+.bag-items {
+  color: #526358;
+}
+
+.clear-button {
+  padding: 7px 12px;
+  background-color: #697a6d;
+  font-size: 13px;
+}
+
+.signup {
+  max-width: none;
+  padding: 45px 20px;
+  background-color: #e6edda;
+}
+
+.signup > h2,
+.signup > p,
+.signup form,
+.signup > .note {
+  max-width: 470px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.signup form,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #c9cec3;
+  border-radius: 4px;
+  background-color: white;
+  color: #30483b;
+  font: 15px "Nunito", Arial, sans-serif;
+}
+
+.check-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.check-label input {
+  width: auto;
+  margin-top: 4px;
+}
+
+.signup form .button,
+.contact-form .button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.note {
+  color: #66766b;
+  font-size: 13px;
+}
+
+.form-message {
+  color: #314d38;
+  font-weight: bold;
+}
+
+/* About and contact pages */
+
+.simple-page {
+  max-width: 900px;
+  min-height: 65vh;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.simple-page h1 {
+  font-size: 48px;
+}
+
+.about-card {
+  margin-top: 30px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 7px;
+  background-color: #e6edda;
+}
+
+.about-card h2 {
+  margin: 0;
+}
+
+.about-picture {
+  display: block;
+  min-width: 190px;
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+}
+
+.contact-page {
+  max-width: 600px;
+}
+
+.contact-form {
+  margin-top: 25px;
+  padding: 22px;
+  border-radius: 7px;
+  background-color: #e6edda;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Smaller screens */
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    margin: 25px auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-picture {
+    width: 220px;
+    max-width: 100%;
+  }
+
+  .product-list {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .bag {
+    margin: 30px 15px;
+  }
+
+  .about-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-picture {
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
